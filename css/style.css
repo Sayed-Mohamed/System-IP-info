@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+html,body
+{
+	box-sizing: border-box;
+	height: 100%;
+   	width: 100%;
+   	margin: 0;
+   	padding: 0;
+}
+
+.container
+{
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/back.jpg); 
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: .6;
+	
+
+	
+}
+.result
+{
+	position: absolute;
+	width: 74%;
+	height: 500px;
+	background-color: #fffdfd;
+	opacity: .6;
+	margin-left: 13%;
+	margin-top: 5%;
+	column-count: 2;
+	column-width: 40%;
+	column-gap: 10%;
+	column-rule: 2px solid black;
+	border-radius:15px;
+		
+	
+
+}
+
+.result img
+{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 2%;
+	margin-left: 13%;
+	
+}
+
+.result span
+{   
+	margin-left: 45%;
+	font-family: 'Bree Serif', serif;
+	font-size: x-large;
+    font-weight: bolder;
+	
+}
+
+.result .info
+{
+	    position: absolute;
+	    display: inline-block;
+	    margin-left: 6%;
+	    margin-top: 4%;
+	    font-family: 'Courgette', cursive;
+	   	font-size: medium;
+    	font-weight: bold;
+}
+
+@media (max-width: 1023px)
+{
+
+		.result img
+		{
+			width: 80px;
+			height: 80px;
+			margin-left: 3%;
+		}
+		.result .info
+		{
+			margin-left: 2%
+		}
+
+}
+
+@media (max-width: 856px)
+{
+
+	.result img
+		{
+			display: block;
+		}
+		.result .info
+		{
+			margin-left: 4%;
+    
+    		margin-top: -3px;
+		}
+}
